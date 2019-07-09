@@ -113,7 +113,7 @@ $(document).ready(function() {
   function askQuestion(question) {
     console.log(question.question);
 
-    remainingSeconds = 5;
+    remainingSeconds = 30;
     showScoreBoard(remainingSeconds);
 
     $("#questionText").text(question.question);

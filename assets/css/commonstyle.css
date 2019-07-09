@@ -1,0 +1,97 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.gameTitle{
+    font-family: 'Barriecito', cursive;
+    font-size: 90px;
+    color: blue;
+    margin-bottom: 10%;
+    text-align: center;
+    height: 10vh;
+}
+
+span, .questionNumberText, .questionNumber{
+    text-align: center;  
+}
+
+
+.choiceRow , .questionRow{
+    text-align: center;
+    background: #fafafa;
+    border-right: 1px solid #dddfde;
+    border-bottom: 1px solid #dddfde;
+    border-left: 1px solid #dddfde;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    position: relative;
+    padding: 10px;
+    margin: 0 auto 15px;
+}
+
+.choiceItemBox {
+    display: inline-block;
+	vertical-align:middle;
+	width:406px;
+	margin:14px;
+	overflow:hidden;
+	border:1px solid #cfcfcf;
+	background: #eaeaea;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+    -moz-box-shadow:0 3px 1px #b1b1b1, #fafafa 0 -1px 0;
+    -webkit-box-shadow:0 3px 1px #b1b1b1, #fafafa 0 -1px 0;
+    box-shadow:0 3px 1px #b1b1b1, #fafafa 0 -1px 0;
+}
+
+.scoreBoard {
+    display: inline-flexbox;
+    text-align: center;
+    font-size: 34pt;
+    font-weight: 700;
+    color: #000;
+    height: 15vh;
+}
+
+.scoreBoardItemHeadings {
+    color: #a5aeba;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    line-height: 22px;
+    height: 3vh;
+}
+
+.remainigQuestionsText {
+    color: #F90;
+}
+
+.questionFont {
+    font-size: 22pt;
+}
+
+.wrong	{
+	background:#e0777b !important;
+	color:#69332f;
+	border-top:1px solid #955355;
+	border-left:1px solid #b25a5d;
+	border-right:1px solid #b36163;
+	border-bottom:1px solid #bf6568;
+	-moz-box-shadow: #c66a69 0 1px 0 inset;-webkit-box-shadow:#c66a69 0 1px 0 inset;box-shadow:#c66a69 0 1px 0 inset;
+}
+.right	{
+	background:#a7cf5f !important;
+	color:#495e2d;
+	border-top:1px solid #708743;
+	border-left:1px solid #8ba84c;
+	border-right:1px solid #88a650;
+	border-bottom:1px solid #97b658;
+	-moz-box-shadow: #90b454 0 1px 0 inset;-webkit-box-shadow:#90b454 0 1px 0 inset;box-shadow:#90b454 0 1px 0 inset;
+}

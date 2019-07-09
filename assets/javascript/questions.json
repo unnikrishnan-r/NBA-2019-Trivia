@@ -1,0 +1,57 @@
+{
+  "question1": {
+    "questionNbr": 1,
+    "question": "Who won the NBA championship in 2019?",
+    "choices": {
+      "choice1": "Golden State Warriors",
+      "choice2": "Toronto Raptors",
+      "choice3": "Portland Trail Blazers",
+      "choice4": "Milwaukee Bucks"
+    },
+    "answer": "Toronto Raptors"
+  },
+  "question2": {
+    "questionNbr": 2,
+    "question": "Which team did Kwahi Leonard plat for prior to Raptors?",
+    "choices": {
+      "choice1": "San Antonio Spurs",
+      "choice2": "Houston Rockets",
+      "choice3": "LA Clippers",
+      "choice4": "Miami Heats"
+    },
+    "answer": "San Antonio Spurs"
+  },
+  "question3": {
+    "questionNbr": 3,
+    "question": "Who won Kia NBA Most Valuable Player in 2019?",
+    "choices": {
+      "choice1": "Paul George",
+      "choice2": "James Harden",
+      "choice3": "Kwahi Leonard",
+      "choice4": "Giannis Antetokounmpo"
+    },
+    "answer": "Giannis Antetokounmpo"
+  },
+  "question4": {
+    "questionNbr":4,
+    "question": "Who has the most 3 pointers in NBA history?",
+    "choices": {
+      "choice1": "Ray Allen",
+      "choice2": "Jamal Crawford ",
+      "choice3": "Stephen Curry ",
+      "choice4": "Vince Carter"
+    },
+    "answer": "Ray Allen"
+  },
+  "question5": {
+    "questionNbr":5,
+    "question": "Who has the most rings NBA history?",
+    "choices": {
+      "choice1": "Kareem Abdul-Jabbar ",
+      "choice2": "Lebron James",
+      "choice3": "Tim Duncan",
+      "choice4": "Bill Russel"
+    },
+    "answer": "Bill Russel"
+  }
+}

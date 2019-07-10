@@ -24,7 +24,11 @@
         rel="stylesheet">
 
 
+    <!-- CSS styles common to all resolutions -->
     <link rel="stylesheet" href="./assets/css/commonstyle.css">
+
+    <!-- CSS overrides for larger screens -->
+    <link rel="stylesheet" media="screen and (min-width:1024px)" href="./assets/css/style.css">
 
     <script src="./assets/javascript/nbagame.js"></script>
 
@@ -32,48 +36,48 @@
 
 <body>
 
-    <div class="container">
+    <div class="container container-fluid">
 
         <div class="row gameTitle">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
                 <span> NBA 2019 Trivia!!!</span>
             </div>
         </div>
-        <div class="row scoreBoard justify-content-center">
-            <div class="col-lg-1"></div>
 
-            <div class="col-lg-2 questionNumber justify-content-center">
-                <div class="row scoreBoardItemHeadings">
+        <div class="row scoreBoard justify-content-sm-center">
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-2 questionNumber justify-content-sm-center">
+                <div class="row scoreBoardItemHeadings justify-content-sm-center">
                     <span> QUESTION #</span>
                 </div>
-                <div class="row questionNumberText"></div>
+                <div class="row questionNumberText justify-content-sm-center"></div>
             </div>
 
-            <div class="col-lg-2  remainigQuestions">
+            <div class="col-sm-2  remainigQuestions">
                 <div class="row scoreBoardItemHeadings">
                     <span> REMAINING QUESTIONS</span>
                 </div>
-                <div class="row remainigQuestionsText"></div>
+                <div class="row remainigQuestionsText justify-content-sm-center"></div>
             </div>
 
-            <div class="col-lg-1"></div>
+            <div class="col-sm-1"></div>
 
-            <div class="col-lg-3 scoreCount">
-                <div class="row scoreBoardItemHeadings">
+            <div class="col-sm-3 scoreCount">
+                <div class="row scoreBoardItemHeadings justify-content-sm-center">
                     <span> SCORE</span>
                 </div>
-                <div class="row scoreText"></div>
+                <div class="row scoreText justify-content-sm-center"></div>
             </div>
 
-            <div class="col-lg-3 clock">
-                <div class="row scoreBoardItemHeadings">
+            <div class="col-sm-3 clock">
+                <div class="row scoreBoardItemHeadings justify-content-sm-center">
                     <span> TIMER</span>
                 </div>
-                <div class="row clockText"></div>
+                <div class="row clockText justify-content-sm-center"></div>
             </div>
         </div>
-
-
+        
     </div>
 
 </body>

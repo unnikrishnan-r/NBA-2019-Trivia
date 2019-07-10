@@ -35,8 +35,8 @@ $(document).ready(function() {
     });
   }
 
-  //   Function to read a JSON file from repository. Once the file is read it invokes startGame() function
-  //   by passing the JSON content from the file.
+  //Function to read a JSON file from repository. Once the file is read it invokes startGame() function
+  //by passing the JSON content from the file.
   function readQuestionFile() {
     console.log("Read Started");
     return fetch("assets/javascript/questions.json")
@@ -55,7 +55,7 @@ $(document).ready(function() {
   /*This function starts the game by performing below
   1. Removes the start button from the page
   2. Copies JSON data to a global object
-  3. Calls createQuestionHtmlElement() to create placeholders for questions, choices and timer message
+  3. Calls createQuestionHtmlElement() to create placeholders for questions, choices
   4. Calls askQuestion() to ask the first question
 */
   function startGame() {
@@ -77,7 +77,9 @@ $(document).ready(function() {
     3. Choices
   */
   function createQuestionHtmlElement() {
-    $(".container").append(
+    $('.container').append($('<div>',{
+      class: "questionAndChoiceBlock"}))
+    $(".questionAndChoiceBlock").append(
       $("<div>", {
         class: "row justify-content-md-center questionRow"
       })
@@ -90,7 +92,7 @@ $(document).ready(function() {
       })
     );
 
-    $(".container").append(
+    $(".questionAndChoiceBlock").append(
       $("<div>", {
         class: "row justify-content-md-center choiceRow"
       })
@@ -113,7 +115,7 @@ $(document).ready(function() {
   function askQuestion(question) {
     console.log(question.question);
 
-    remainingSeconds = 30;
+    remainingSeconds = 10;
     showScoreBoard(remainingSeconds);
 
     $("#questionText").text(question.question);
@@ -217,13 +219,14 @@ $(document).ready(function() {
         .addClass("right");
     }
 
+    showScoreBoard(remainingSeconds);
+
     if (currentQuestionNumber < Object.keys(gameObject).length) {
       waitAndAskNextQuestion();
     } else {
       console.log("Correct Answer : " + correctAnswerCounter);
+      gameOver();
     }
-
-    showScoreBoard(remainingSeconds);
   }
 
   /* This function handles the waiting before the next question is shown on screen using setTimeOut
@@ -240,6 +243,13 @@ $(document).ready(function() {
       $(".choiceItemBox").remove();
       askQuestion(gameObject["question" + currentQuestionNumber]);
     }, 2000);
+  }
+
+  function gameOver() {
+    setTimeout(function() {
+      $("#questionText").text("GAME OVER!!!");
+      $(".choiceRow").remove();
+    }, 3000);
   }
 
   showStartButton();

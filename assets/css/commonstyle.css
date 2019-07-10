@@ -5,18 +5,18 @@
 
 .gameTitle{
     font-family: 'Barriecito', cursive;
-    font-size: 90px;
+    font-size: 7vw;
     color: blue;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     text-align: center;
     height: 10vh;
 }
 
-span, .questionNumberText, .questionNumber{
-    text-align: center;  
+.questionAndChoiceBlock{
+    /* margin-top: 5%; */
+    position: relative;
 }
-
-
 .choiceRow , .questionRow{
     text-align: center;
     background: #fafafa;
@@ -37,7 +37,7 @@ span, .questionNumberText, .questionNumber{
 .choiceItemBox {
     display: inline-block;
 	vertical-align:middle;
-	width:406px;
+	width:130px;
 	margin:14px;
 	overflow:hidden;
 	border:1px solid #cfcfcf;
@@ -51,22 +51,23 @@ span, .questionNumberText, .questionNumber{
 }
 
 .scoreBoard {
-    display: inline-flexbox;
     text-align: center;
-    font-size: 34pt;
+    font-size: 3.5vw;
     font-weight: 700;
     color: #000;
-    height: 15vh;
+    /* height: 25vh; */
+    position: relative;
 }
 
 .scoreBoardItemHeadings {
     color: #a5aeba;
-    font-size: 20px;
+    font-size: 1vw;
     text-transform: uppercase;
     text-align: center;
     font-weight: normal;
-    line-height: 22px;
+    line-height: 2vw;
     height: 3vh;
+
 }
 
 .remainigQuestionsText {
@@ -74,7 +75,7 @@ span, .questionNumberText, .questionNumber{
 }
 
 .questionFont {
-    font-size: 22pt;
+    font-size: 2.5vw;
 }
 
 .wrong	{

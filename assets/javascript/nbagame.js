@@ -54,9 +54,10 @@ $(document).ready(function() {
 
   /*This function starts the game by performing below
   1. Removes the start button from the page
-  2. Copies JSON data to a global object
-  3. Calls createQuestionHtmlElement() to create placeholders for questions, choices
-  4. Calls askQuestion() to ask the first question
+  2. Invokes readQuestionFile() which will return a JSON object
+  3. Copies JSON data to a global object
+  4. Calls createQuestionHtmlElement() to create placeholders for questions, choices
+  5. Calls askQuestion() to ask the first question
 */
   function startGame() {
     readQuestionFile().then(function(gameQuestions) {
